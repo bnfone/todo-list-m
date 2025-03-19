@@ -6,17 +6,22 @@ Die To-Do-Liste funktioniert serverless. Das bedeutet sie wird nicht zwischen Ge
 
 Beim ersten Öffnen werden beispielhafte Einträge geladen, damit man eine grobe Vorstellung hat, wie die To-Do-Liste funktioniert (auch wenn davon auszugehen ist, dass die Bedinung einigermaßen intuitiv ist).
 
+
 **Die Basisfunktionen**
+
 [x] Neue Aufgaben erstellen
 [x] Aufgaben löschen
 [x] Aufgaben als Erledigt markieren
 
+
 **Meine Ideen**, die die To-Do-Liste *einzigartig* machen:
+
 [x] "Ich habe Langeweile"-Button
 [x] Motivation direkt in der Liste (etwas versteckt)
 
 
 Dinge die zusätzlich nützlich / wichtig sind:
+
 [x] Responsives Design (halbwegs - this is not a bug, it's a feature => Zwingt die User an einen Desktop!)
 [x] Prioritäten Einschätzung und Hervorhebung
 [x] Automatisches Sortieren, wenn eine Aufgabe erledigt wurde
