@@ -21,7 +21,7 @@ Dinge die zusätzlich nützlich / wichtig sind:
 - [x] Prioritäten Einschätzung und Hervorhebung
 - [x] Automatisches Sortieren, wenn eine Aufgabe erledigt wurde
 - [ ] Zähler der erledigten Aufgaben um Motiviert zu bleiben
-- [x] Darkmode
+- [ ] Darkmode
 
 *Nur die mit Haken markierten Features sind bisher umgesetzt!*
 
