@@ -4,7 +4,7 @@ Das ist meine To-Do-Liste für die Bewerbung auf ein Duales Studium für angewan
 
 Die To-Do-Liste funktioniert serverless. Das bedeutet sie wird nicht zwischen Geräten synchronisiert und ist daher nur für die Nutzung an einem primären Gerät geeignet.
 
-Beim ersten Öffnen werden beispielhafte Einträge geladen, damit man eine grobe Vorstellung hat, wie die To-Do-Liste funktioniert (auch wenn davon auszugehen ist, dass die Bedinung einigermaßen intuitiv ist).
+Beim ersten Öffnen werden beispielhafte Einträge geladen, damit man eine grobe Vorstellung hat, wie die To-Do-Liste funktioniert (auch wenn davon auszugehen ist, dass die Bedienung einigermaßen intuitiv ist).
 
 
 **Die Basisfunktionen**
