@@ -1,0 +1,9 @@
+/* // Wie kommentiert man in CSS? SASS ist einfacher... */
+/* // Styles für ToDo wenn completed oder hohe prio */
+.completed td {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .high-priority td {
+    background-color: #ff606e65;
+  }

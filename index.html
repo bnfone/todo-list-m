@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de_DE">
+
+<head>
+    <!--UTF-8 Umlaute und Sonderzeichen-->
+    <meta charset="UTF-8">
+
+    <!--SEO Suchmaschienenoptimierung-->
+    <title>ÜberView - Bewerbungsprojekt M.</title>
+    <meta name="description"
+        content="Das ist ein Projekt für eine Bewerbung um ein duales Studium für angewandte Informatik. Dieses Projekt ist eine ToDo Liste die serverless funktioniert - und daher alle Infos nur im Browser speichert. Daten können verloren gehen wenn die Cookies gelöscht werden!" />
+    <meta property="og:title" content="ToDo Liste - Bewerbungsprojekt M." />
+    <meta property="og:type" content="website" />
+
+    <!--Favicons/Touchicons-->
+    <!-- in diesem Projekt nicht nötig, da es nicht in production geht! -->
+
+    <!--Stylesheets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+    <!-- Bootstrap 5 -->
+    <!-- sollte vielleicht in Cloudflare CDN umgewandelt werden... -->
+    <link rel="stylesheet" crossorigin="anonymous" href="https://lab.bnfone.com/web-requirements/bootstrap/5.2.3/css/bootstrap.min.css">
+    <script src="https://lab.bnfone.com/web-requirements/bootstrap/5.2.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <!-- sollte vielleicht in Cloudflare CDN umgewandelt werden... -->
+    <script src="https://lab.bnfone.com/web-requirements/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <!-- sollte vielleicht in Cloudflare CDN umgewandelt werden... -->
+    <link rel="stylesheet" crossorigin="anonymous" href="https://lab.bnfone.com/web-requirements/fontawesome/6.2.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Custom JS -->
+    <!-- in the end of this File! -->
+
+</head>
+<body>
+
+   <!-- HEADER-->
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom">
+      <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4"><i class="fa-solid fa-list-check"></i> ÜberView</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item ">
+          <button id="randomTaskBtn" class="btn btn-warning nav-link">Mir ist Langweilig</button>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/bnfone/todo-list-m" target="_blank" class="nav-link"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="https://github.com/bnfone/todo-list-m" class="nav-link"><i class="fa-solid fa-circle-question"></i></a>
+        </li> -->
+      </ul>
+    </header>
+  </div>
+  <!-- END HEADER -->
+  
+  <!-- FORMULAR -->
+  <div class="container mt-4">
+    <h2>Neue Aufgabe:</h2>
+    <form id="taskForm">
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" id="taskTitle" class="form-control" placeholder="Super spannende Aufgabe :)" required>
+        </div>
+        <div class="col">
+          <input type="text" id="taskTags" class="form-control" placeholder="Tags">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" id="taskNote" class="form-control" placeholder="Anmerkungen">
+        </div>
+        <div class="col">
+          <select id="taskPriority" class="form-select">
+            <option value="niedrig">Niedrig</option>
+            <option value="mittel">Mittel</option>
+            <option value="hoch">Hoch</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Aufgabe hinzufügen</button>
+    </form>
+  </div>
+  <!-- END FORMULAR -->
+  
+  <!-- STATISTIKEN, weil why not und könnte mich motiviert halten ... sonst gibts noch den Button im Footer -->
+  <!-- funktioniert nicht??! -->
+  <!-- <div class="container mt-4">
+    <p id="taskCounter" class="fw-bold"></p>
+  </div> -->
+  <!-- END STATISTIKEN -->
+  
+  <!-- Die eigentliche LISTE -->
+  <div class="container mt-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Erledigt</th>
+          <th>Title</th>
+          <th>Tags</th>
+          <th>Anmerkungen</th>
+          <th>Priorität</th>
+          <th>Löschen</th>
+        </tr>
+      </thead>
+      <tbody id="taskList">
+        <!-- wenn das funktioniert, sollt hier JS die Elemente einfügen -->
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+    <div class="container d-flex justify-content-between">
+      <span class="text-muted">ToDo Liste von Benedikt N. Fischer</span>
+      <button id="motivationBtn" class="btn btn-secondary">Ich brauche Motivation <i class="fa-solid fa-face-smile-wink"></i></button>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+  
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
